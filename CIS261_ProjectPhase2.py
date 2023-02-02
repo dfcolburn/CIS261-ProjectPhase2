@@ -57,8 +57,8 @@ def printinfo(EmpDetailList):
         EmpTotals["TotEmp"] = TotEmployees
         # write code to assign TotHours, TotGrossPay, TotTax, and TotNetPay to corresponding dictionary item
         EmpTotals["TotHours"] = TotHours
-        EmpTotals["TotalGrossPay"] = TotGrossPay
-        EmpTotals["TotTaxt"] = TotTax
+        EmpTotals["TotGrossPay"] = TotGrossPay
+        EmpTotals["TotTax"] = TotTax
         EmpTotals["TotNetPay"] = TotNetPay
  
 # COMMENT OUT THE FOLLOWING CODE
