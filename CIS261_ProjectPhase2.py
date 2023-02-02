@@ -80,8 +80,7 @@ def PrintTotals(EmpTotals):
     print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]:,.2f}')
     print(f'Total Income Tax: {EmpTotals["TotTax"]:,.2f}')
     print(f'Total Net Pay: {EmpTotals["TotNetPay"]:,.2f}')
-
-    print()
+    
 if __name__ == "__main__":
     # COMMENT OUT THE FOLLOWING CODE
     # #TotEmployees = 0
@@ -106,7 +105,6 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
-        EmpDetail = []
         EmpDetail = [fromdate, todate, empname, hours, hourlyrate, taxrate]
                 
         #the following code appends the list EmpDetailList to the list EmpDetailList
