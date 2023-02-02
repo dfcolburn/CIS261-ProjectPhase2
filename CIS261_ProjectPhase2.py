@@ -8,11 +8,9 @@ def GetDatesWorked():
     #write the code to input fromdate and todate and return the values from the function.  
     #Prompt the user for the dates in the following format: mm/dd/yyyy
     #no validations are needed for this input, we will assume the dates are entered correctly.
-    fromdate = input('Enter the from date (mm/dd/yyyy):  ')
-    todate = input("Enter the to date (mm/dd/yyyy):  ")
+    fromdate = input('Enter Start Date (mm/dd/yyyy): ')
+    todate = input('Enter End Date (mm/dd/yyyy): ')
     return fromdate, todate
-
-
 def GetHoursWorked():
     hours = float(input('Enter amount of hours worked:  '))
     return hours
@@ -22,12 +20,12 @@ def GetHourlyRate():
 def GetTaxRate():
     taxrate = float(input ("Enter tax rate: "))
     return taxrate
-
 def CalcTaxAndNetPay(hours, hourlyrate, taxrate):
     grosspay = hours * hourlyrate
     incometax = grosspay * taxrate
     netpay = grosspay - incometax
     return grosspay, incometax, netpay
+    print()
 # COMMENT OUT THE FOLLOWING CODE
 #def printinfo(empname, hours, hourlyrate,grosspay, taxrate, incometax, netpay):
 #    print(empname, f"{hours:,.2f}",  f"{hourlyrate:,.2f}", f"{grosspay:,.2f}",  f"{taxrate:,.1%}",  f"{incometax:,.2f}",  f"{netpay:,.2f}")
@@ -107,9 +105,8 @@ if __name__ == "__main__":
         #printinfo(empname, hours, hourlyrate, grosspay, taxrate, incometax, netpay)
 
         #write code to insert fromdate, todate, empname, hours, hourlyrate, and taxrate into list EmpDetail
-        EmpDetail = []
-        EmpDetailList.extend([fromdate, todate, empname, hours, hourlyrate, taxrate])
-          
+        EmpDetail = [fromdate, todate, empname, hours, hourlyrate, taxrate]
+                
         #the following code appends the list EmpDetailList to the list EmpDetailList
         EmpDetail.append(EmpDetail)
 
