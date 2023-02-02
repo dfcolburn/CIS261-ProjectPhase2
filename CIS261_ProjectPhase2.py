@@ -76,10 +76,10 @@ def PrintTotals(EmpTotals):
     # the following line of code prints Total Employees from the dictionary
     print(f'Total Number Of Employees: {EmpTotals["TotEmp"]}')
     # write code to print TotalHrs, TotGrossPay, TotTax and TotNetPay from dictionary
-    print(f'Total Hours Worked: {EmpTotals["TotHours:,.2f"]}')
-    print(f'Total Gross Pay: {EmpTotals["TotGrossPay:,.2f"]}')
-    print(f'Total Income Tax: {EmpTotals["TotTax:,.2f"]}')
-    print(f'Total Net Pay: {EmpTotals["TotNetPay:,.2f"]}')
+    print(f'Total Hours Worked: {EmpTotals["TotHours"]:,.2f}')
+    print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]:,.2f}')
+    print(f'Total Income Tax: {EmpTotals["TotTax"]:,.2f}')
+    print(f'Total Net Pay: {EmpTotals["TotNetPay"]:,.2f}')
 
     print()
 if __name__ == "__main__":
